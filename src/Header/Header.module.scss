@@ -1,9 +1,14 @@
+header {
+  height: 80px; /* enough to fit nav and padding */
+}
+
 nav {
   background-color: rgba(10, 96, 153, 0.918);
-  height: 20px;
-  padding: 40px;
+
+  height: 100%; /* fill header */
+  padding: 0 20px; /* only horizontal padding */
   display: flex;
-  align-items: center;
+  align-items: center; /* vertically center nav items */
   gap: 5px;
 }
 .logo {
@@ -17,7 +22,7 @@ nav {
   font-size: 28px;
   cursor: pointer;
 }
-img {
+header nav img {
   width: 50px; /* sets the width */
   height: auto;
 }

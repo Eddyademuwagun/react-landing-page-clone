@@ -1,5 +1,5 @@
 import React from 'react';
-import cookiejar from './coooooookiiiieeee.svg';
+import cookiejar from '../images/Cookie.svg';
 import styles from './Header.module.scss';
 
 export default function Header() {

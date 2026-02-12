@@ -1,0 +1,49 @@
+// .content {
+//   background-image: url('../images/bigBgImage.webp');
+//   flex: 1; /* fills remaining space */
+// }
+.content {
+  flex: 1; /* fills remaining space */
+
+  /* Background image */
+  background-image: url('../images/bigBgImage.webp');
+  background-size: cover; /* makes the image fill the entire area */
+  background-position: center; /* centers the image */
+  background-repeat: no-repeat; /* prevents tiling */
+}
+
+.textBox {
+  padding: 30px 40px;
+  border-radius: 12px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 10px;
+  margin-top: 500px;
+}
+
+.text {
+  padding: 30px;
+  font-size: large;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media (max-width: 400px) {
+  .content {
+    background-image: url('../images/smallBgImage.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .textBox {
+    max-width: 90%;
+    padding: 15px 20px;
+  }
+}
+
+//. @media (max-width: 400px) {
+//. .content {
+//.  background-image: url('../images/smallBgImage.web');
+//.background-size: cover;
+//.background-position: no-repeat;
+//.}
