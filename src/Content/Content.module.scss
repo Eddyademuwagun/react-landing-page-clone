@@ -15,12 +15,25 @@
 .textBox {
   padding: 30px 40px;
   border-radius: 12px;
-  max-width: 500px;
+  max-width: 400px;
   text-align: center;
-  box-shadow: 0 4px 10px;
-  margin-top: 500px;
-}
+  margin-top: 250px;
+  margin-bottom: 100px;
+  margin-left: 50px;
 
+  /* Transparent background for frosted glass */
+  background-color: rgba(255, 255, 255, 0.1);
+
+  /* Frosted blur effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+
+  /* Thin milky border */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  /* No shadow */
+  box-shadow: none;
+}
 .text {
   padding: 30px;
   font-size: large;
@@ -28,17 +41,38 @@
   margin: 0;
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 768px) {
   .content {
-    background-image: url('../images/smallBgImage.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url('/images/smallBgImage.webp');
   }
   .textBox {
-    max-width: 90%;
+    max-width: 60%;
     padding: 15px 20px;
   }
+}
+img {
+  width: 80px; /* sets the width */
+  padding-top: 25px;
+}
+
+.list {
+  display: grid;
+
+  list-style: none;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  column-gap: 0px;
+
+  padding: 20px;
+}
+
+button {
+  background-color: rgba(10, 96, 153, 0.918);
+  width: 350px;
+  height: 50px;
+  border-radius: 12px;
+  border: 0cap;
 }
 
 //. @media (max-width: 400px) {
